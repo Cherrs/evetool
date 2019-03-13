@@ -6,9 +6,9 @@ import {ContractComponent} from './contract/contract.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/xdkd', pathMatch: 'full' },
+  { path: '', redirectTo: '/xdkdsd', pathMatch: 'full' },
   {path:'xdkd',component:XdkdComponent},
-  {path:'Contract',component:ContractComponent}
+  {path:'xdkdauto',component:ContractComponent}
 ];
 
 @NgModule({

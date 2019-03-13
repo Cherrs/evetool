@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 import {
   FormBuilder,
   FormGroup,
@@ -14,7 +15,6 @@ export class ContractComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
   submitForm(): void {
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{xdkdModel} from '../model/xdkdModel'
 import {
   FormBuilder,
   FormGroup,
@@ -10,9 +11,13 @@ import {
   styleUrls: ['./xdkd.component.scss']
 })
 export class XdkdComponent implements OnInit {
-
+  
   constructor() { }
-
+  model:xdkdModel={
+    m2:0,
+    price:0,
+    postfee:0
+  }
   ngOnInit() {
   }
 

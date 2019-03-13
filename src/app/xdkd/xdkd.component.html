@@ -1,11 +1,10 @@
-<h1>自动计算快递费用 - 星东快递</h1>
+<h1>手动计算快递费用 - 星东快递</h1>
+<div >
+    <label>体积：</label><nz-input-number class="m2" [(ngModel)]="model.m2"></nz-input-number>
+</div>
+<label>估价：</label><nz-input-number class="m2" [(ngModel)]="model.price"></nz-input-number>
 
-  <div>
-    <div nz-row>
-        <div nz-col nzSpan="8">
-            <textarea nz-input rows="8" placeholder="write any thing"></textarea>
-        </div>
-    </div>
-    
+<div>
     <button nz-button nzType="primary">计算</button>
-  </div>
+</div>
+<label>邮费：{{model.postfee}}</label>
