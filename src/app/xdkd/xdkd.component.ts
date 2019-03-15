@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{xdkdModel} from '../model/xdkdModel'
+import{xdkdModel} from './xdkdModel'
 import {
   FormBuilder,
   FormGroup,
@@ -13,11 +13,12 @@ import {
 export class XdkdComponent implements OnInit {
   
   constructor() { }
+  OptionShow:boolean = false;
   model:xdkdModel={
     m2:0,
     price:0,
     postfee:0
-  }
+  };
   ngOnInit() {
   }
 

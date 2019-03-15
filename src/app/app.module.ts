@@ -13,6 +13,8 @@ import { XdkdComponent } from './xdkd/xdkd.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ContractComponent } from './contract/contract.component';
+import { MenuComponent } from './menu/menu.component';
+import { MainComponent } from './main/main.component';
 
 registerLocaleData(zh);
 
@@ -20,7 +22,9 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     XdkdComponent,
-    ContractComponent
+    ContractComponent,
+    MenuComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

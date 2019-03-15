@@ -6,7 +6,7 @@ import {ContractComponent} from './contract/contract.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/xdkdsd', pathMatch: 'full' },
+  { path: '', redirectTo: '/xdkd', pathMatch: 'full' },
   {path:'xdkd',component:XdkdComponent},
   {path:'xdkdauto',component:ContractComponent}
 ];
