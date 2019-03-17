@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContractComponent } from './contract/contract.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
+import { ExpressoptionComponent } from './expressoption/expressoption.component';
 
 registerLocaleData(zh);
 
@@ -24,7 +25,8 @@ registerLocaleData(zh);
     XdkdComponent,
     ContractComponent,
     MenuComponent,
-    MainComponent
+    MainComponent,
+    ExpressoptionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{MenuComponent}from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,5 @@ import{MenuComponent}from './menu/menu.component'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'client';
+  title = '快递';
 }

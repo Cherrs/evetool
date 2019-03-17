@@ -1,0 +1,34 @@
+<div *ngIf="ExpOption">
+  <div>
+      <label>运费单价：</label>
+      <nz-input-number [nzFormatter]="PriceFormat" class="m2" [(ngModel)]="ExpOption.unitPrice"></nz-input-number>
+  </div>
+  <div>
+      <label>体积递增：</label>
+      <nz-input-number class="m2" [(ngModel)]="ExpOption.incrementVolume"></nz-input-number>
+  </div>
+  <div>
+      <label>允许浮动：</label>
+      <nz-input-number class="m2" [(ngModel)]="ExpOption.floatingVolume"></nz-input-number>
+  </div>
+  <div>
+      <label>免费体积：</label>
+      <nz-input-number class="m2" [(ngModel)]="ExpOption.freeVolume"></nz-input-number>
+  </div>
+  <div>
+      <label>保险：</label>
+      <nz-switch [ngModel]="ExpOption.isCare" (click)="ExpOption.isCare = !ExpOption.isCare" nzCheckedChildren="是"
+          nzUnCheckedChildren="否"></nz-switch>
+  </div>
+  <div *ngIf="ExpOption.isCare" [hidden]="!ExpOption.isCare">
+      <div>
+          <label>保险起步价：</label>
+          <nz-input-number [nzFormatter]="PriceFormat" class="m2" [(ngModel)]="ExpOption.care.minPrice">
+          </nz-input-number>
+      </div>
+      <div>
+          <label>保险比例：</label>
+          <nz-input-number class="m2" [(ngModel)]="ExpOption.care.ratio"></nz-input-number>
+      </div>
+  </div>
+</div>

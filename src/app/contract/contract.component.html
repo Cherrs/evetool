@@ -1,10 +1,23 @@
 <h1>自动计算快递费用 - 星东快递</h1>
 <div>
-        <div nz-row>
-            <div nz-col nzSpan="8">
-                <textarea nz-input rows="8" placeholder="write any thing"></textarea>
-            </div>
+    <div nz-row>
+        <div nz-col nzSpan="8">
+            <textarea nz-input rows="8" [(ngModel)]="PostModel.text" placeholder="复制合同到这里，支持中文"></textarea>
         </div>
-        
-        <button nz-button nzType="primary">计算</button>
-      </div>
+    </div>
+
+    <button nz-button nzType="primary" (click)="CalculatePrice()">计算</button>
+</div>
+<div *ngIf="result">
+    <div>
+        <span>邮费：{{result.carePrice+result.postFee | number}} ISK</span>
+    </div>
+    <div>
+        <span>吉他收价：{{result.buyPrice | number}} ISK</span>
+    </div>
+    <div>
+        <span>吉他卖价：{{result.sellPrice | number}} ISK</span>
+    </div>
+</div>
+
+<app-expressoption [ExpOption]="ExpOption"></app-expressoption>
